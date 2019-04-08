@@ -4,21 +4,17 @@
 
 from weather_utils import Weather
 
-# Set city variable
-# Example for a valid city value.
-# Valid values can be found in https://openweathermap.org
+# Example of setting city variable. Valid values can be found in https://openweathermap.org 
 city = 'Jerusalem'
 
 
-# Set temperature units variable.
-# Example for a valid temperature units value.
-# Valid values can be: 'kelvin'\'fahrenheit'\'celcius'
+# Example of setting temperature units variable. Valid values can be:'kelvin', 'fahrenheit', 'celcius'
 temp_units = 'celcius'
 
 # Create object from Weather class
 weather_ob = Weather(city, temp_units)
+
 try:
-    # Call get_weather method to fetch waether data
     if weather_ob.get_weather():
         print("All weather data: %s" % weather_ob.all_data)
         print("Temperature: %s" % weather_ob.temp)
