@@ -11,7 +11,7 @@ city = 'Jerusalem'
 # Example of setting temperature units variable. Valid values can be:'kelvin', 'fahrenheit', 'celcius'
 temp_units = 'celcius'
 
-# Create object from Weather class
+# Create object from Weather class and print weather data
 weather_ob = Weather(city, temp_units)
 
 try:
